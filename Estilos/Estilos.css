@@ -1,0 +1,213 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+
+/* HEADER */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  background: #fff;
+}
+
+.header-container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 30px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LOGO */
+.logo {
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 18px;
+}
+
+/* NAV */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 14px;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.divider {
+  width: 1px;
+  height: 18px;
+  background: #000;
+}
+
+/* ICONOS */
+.icons {
+  display: flex;
+  gap: 18px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.icons span:hover {
+  opacity: 0.6;
+}
+
+
+.contenedor-doble {
+  display: flex;
+  width: 100%;
+  height: 800px;
+}
+
+.contenedor-doblee {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  padding: 0px 40px;
+}
+
+.imagen {
+  flex: 1;
+}
+
+.imagenn {
+  flex: 1;
+}
+
+.imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}   
+
+.imagenn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  /* ✨ efecto zoom */
+  transition: transform 0.4s ease;
+}
+
+.imagenn img:hover {
+  transform: scale(1.05);
+}
+
+
+.separacion{
+    padding: 10px 15px;
+}
+
+.carrusel-section {
+  text-align: center;
+  padding: 60px 40px;
+  background: #fff;
+}
+
+.carrusel-section h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.carrusel-section p {
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.carrusel {
+  display: flex;
+  gap: 40px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 20px;
+}
+
+.carrusel::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  min-width: 260px;
+  scroll-snap-align: center;
+}
+
+.card img {
+  width: 100%;
+  max-width: 260px;
+  margin-bottom: 20px;
+}
+
+.card h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.card span {
+  font-size: 16px;
+  color: #333;
+}
+
+.slider-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 60px auto;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.6s ease;
+}
+
+.slide {
+  min-width: 100%;
+  padding: 0 5px; /* 🔥 espacios laterales */
+  box-sizing: border-box;
+}
+
+.slide img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Flechas */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 38px;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
