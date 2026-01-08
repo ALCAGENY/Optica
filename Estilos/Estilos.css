@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   
@@ -56,16 +61,36 @@ body {
   background: #000;
 }
 
-/* ICONOS */
 .icons {
   display: flex;
-  gap: 18px;
-  font-size: 18px;
-  cursor: pointer;
+  gap: 20px;
 }
 
-.icons span:hover {
-  opacity: 0.6;
+.icons a{
+  text-decoration: none;
+  color: #000000;
+  font-size: 14px;
+}
+
+.icons a :hover{
+  text-decoration: underline;
+}
+
+.icons img {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.icons img:hover {
+  transform: scale(1.2);
+  opacity: 0.7;
+}
+
+.Texto{
+  padding: 10px;
+  text-align: center;
 }
 
 
@@ -145,12 +170,18 @@ body {
 .card {
   min-width: 260px;
   scroll-snap-align: center;
+   transition: transform 0.4s ease;
 }
 
 .card img {
   width: 100%;
   max-width: 260px;
   margin-bottom: 20px;
+  transition: transform 0.4s ease; /* animación */
+}
+
+.card img:hover {
+  transform: scale(1.08); /* agranda la imagen */
 }
 
 .card h4 {
@@ -210,4 +241,145 @@ body {
 
 .arrow.right {
   right: 10px;
+}
+
+
+.templo-section {
+  background: #faf7ef;
+  text-align: center;
+}
+
+.templo-section h2 {
+  padding: 30px;
+  font-size: 44px;
+  
+}
+
+.subtitle {
+  max-width: 800px;
+  margin: 0 auto 60px;
+  font-size: 18px;
+  color: #333;
+}
+
+/* FORM */
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  align-items: end;
+  max-width: 1200px;
+  margin: 0 auto 80px;
+}
+
+.field {
+  text-align: left;
+}
+
+.field label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.field span {
+  color: red;
+}
+
+.field select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+}
+
+.horarios p {
+  color: #999;
+  font-size: 14px;
+}
+
+.btn-agendar {
+  padding: 14px 26px;
+  border-radius: 30px;
+  border: 2px solid #ccc;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  height: 50px;
+}
+
+/* GALERÍA */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.imagenn {
+  overflow: hidden;
+}
+
+.imagenn img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.imagenn img:hover {
+  transform: scale(1.05);
+}
+
+.footer {
+  margin-top: 20px;
+  background: #111;
+  color: #fff;
+  padding: 60px 60px 30px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-col h4 {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.footer-col a {
+  display: block;
+  color: #bbb;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-col a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+}
+
+.mapa-tiendas {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.mapa-tiendas iframe {
+  width: 100%;
+  height: 420px;
+  border: none;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }

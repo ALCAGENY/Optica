@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ben & Frank • Inspiración</title>
+  <title>OPTICAS</title>
   <link rel="stylesheet" href="/Estilos/Estilos.css">
 </head>
 <body>
@@ -12,35 +12,31 @@
 
     <!-- Logo -->
     <div class="logo">
-      Opticasangeles.gt
+      Tiendas Opticas
     </div>
 
     <!-- Menú -->
-    <nav class="nav">
-      <a href="#">Ópticos</a>
-      <a href="#">Pa' la compu</a>
-      <a href="#">Sol</a>
-      <a href="#">Clip on</a>
-      <a href="#">Porquerías</a>
-      <a href="#">Elementales</a>
+    <nav class="nav" id="Inicio">
+      <a href="#Inicio">Inicio</a>
+      <a href="#Articulos">Articulos</a>
+      <a href="#Ofertas">Ofertas</a>
+      <a href="#CadaOcacion">Cada Ocacion</a>
       <span class="divider"></span>
-      <a href="#">Templos</a>
-      <a href="#">Test de los Frutilentes</a>
+      <a href="#Tiendas">Tiendas</a>
+      <a href="#">Agenda Tu Cita</a>
     </nav>
 
     <!-- Iconos -->
     <div class="icons">
-      <span>🔍</span>
-      <span>♡</span>
-      <span>🛒</span>
-      <span>👤</span>
-      <span>🚚</span>
-    </div>
+  <img src="/SVG/usuario.png" alt="Usuario">
+  
+</div>
+
 
   </div>
 </header>
 
-<section class="contenedor-doble">
+<section class="contenedor-doble" >
   <div class="imagen">
     <img src="/Imgenes/imagen 1.jpg" alt="Imagen 1">
   </div>
@@ -50,44 +46,48 @@
   </div>
 </section>
 
-<section class="carrusel-section">
-  <h2>¡Pásele sin compromiso!</h2>
+<section class="carrusel-section" id="Articulos">
+  <h2>Articulos en Sucursales</h2>
   <p>Aquí encontrarás tu lente ideal</p>
 
   <div class="carrusel">
     <div class="card">
       <img src="/Imgenes/Lente1.jpg" alt="">
       <h4>Dave x GAAD</h4>
-      <span>$2590</span>
+      
     </div>
 
     <div class="card">
-      <img src="/Imgenes/Lente2.jpg" alt="">
+      <img class="" src="/Imgenes/Lente2.jpg" alt="">
       <h4>Glorp Antimateria</h4>
-      <span>$2590</span>
+      
     </div>
 
     <div class="card">
       <img src="/Imgenes/Lente3.jpg" alt="">
       <h4>Guillermo</h4>
-      <span>$2290</span>
+      
     </div>
 
     <div class="card">
       <img src="/Imgenes/Lente4.jpg" alt="">
       <h4>Dafna</h4>
-      <span>$2290</span>
+      
     </div>
 
     <div class="card">
       <img src="/Imgenes/Lente5.jpg" alt="">
       <h4>Bruno</h4>
-      <span>$2490</span>
+      
     </div>
   </div>
 </section>
 
-<section class="slider-container">
+<section class="slider-container" id="Ofertas">
+  <div class="carrusel-section">
+ <h2>Vista </h2>
+  <p>Aquí encontrarás tu lente ideal</p>
+  </div>
   <button class="arrow left" onclick="prevSlide()">‹</button>
 
   <div class="slider">
@@ -109,7 +109,7 @@
 
 <script src="/Js/Carrusel.js"></script>
 
-<section class="carrusel-section">
+<section class="carrusel-section" id="CadaOcacion">
     <h2>Lentes para toda ocasión</h2>
   <p>Para irte a pasear o lograrte graduar, un lente no le va a faltar</p>
 </section>
@@ -117,17 +117,99 @@
 <section class="contenedor-doblee">
   <div class="imagenn">
     <img src="https://i.pinimg.com/1200x/c7/82/8a/c7828ae79313abf024a0c12472e63701.jpg" alt="Imagen 1">
+    <h1 class="Texto">Vista</h1>
   </div>
-<div class="separacion">
-    
-</div>
-  <div class="imagenn">
-    <img src="https://i.pinimg.com/1200x/78/c3/6a/78c36af507c1cc3f5b7e95148054ac00.jpg" alt="Imagen 2">
+<div class="separacion"></div>
+  <div class="imagenn" >
+    <img src="https://i.pinimg.com/736x/32/6c/95/326c95a44a018e6384d55db2c0eaabb9.jpg" alt="Imagen 2">
+    <h1 class="Texto">Sol</h1>
   </div>
 </section>
 
+<section class="templo-section" id="Tiendas">
 
-  
+  <h2>Ubicacion</h2>
+  <p class="subtitle">
+    
+  </p>
+
+  <div class="form-row">
+    <div class="field">
+      <label>Estado<span>*</span></label>
+      <select>
+        <option>Chiapas</option>
+        <option>Ciudad de México</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label>Tiendas<span>*</span></label>
+      <select>
+        <option>Tuxtla Gutiérrez</option>
+        <option>Tapachula</option>
+        <option>CDMX Centro</option>
+      </select>
+    </div>
+
+    <div class="field horarios">
+      <label>Próximos horarios:</label>
+      <p>Lunes a Sábado · 9:00 am – 7:00 pm</p>
+    </div>
+  </div>
+
+  <!-- MAPA -->
+  <div class="mapa-tiendas">
+    <iframe
+      src="https://www.google.com/maps?q=Tuxtla%20Gutiérrez%20Chiapas|Tapachula%20Chiapas|Ciudad%20de%20México&output=embed"
+      loading="lazy"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+</section>
+
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-col">
+      <h4>Categorías</h4>
+      <a href="#">Lentes ópticos</a>
+      <a href="#">Lentes de sol</a>
+      <a href="#">Accesorios</a>
+      <a href="#">Examen de la vista</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Información</h4>
+      <a href="#">Sobre nosotros</a>
+      <a href="#">Tiendas</a>
+      <a href="#">Preguntas frecuentes</a>
+      <a href="#">Contacto</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Mi cuenta</h4>
+      <a href="#">Iniciar sesión</a>
+      <a href="#">Mis pedidos</a>
+      <a href="#">Citas</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Síguenos</h4>
+      <div class="socials">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">TikTok</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Tu Marca de Lentes. Todos los derechos reservados.</p>
+  </div>
+</footer>
 
 </body>
 </html>
