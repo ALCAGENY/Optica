@@ -6,37 +6,35 @@
   <title>OPTICAS</title>
   <link rel="stylesheet" href="/Estilos/Estilos.css">
 </head>
-<body>
+<body id="">
  <header class="header">
   <div class="header-container">
 
     <!-- Logo -->
     <div class="logo">
-      Tiendas Opticas
+      ÓPTICAS ÁNGELES
     </div>
 
     <!-- Menú -->
-    <nav class="nav" id="Inicio">
-      <a href="#Inicio">Inicio</a>
+    <nav class="nav">
+      <a href="#">Inicio</a>
       <a href="#Articulos">Articulos</a>
       <a href="#Ofertas">Ofertas</a>
       <a href="#CadaOcacion">Cada Ocacion</a>
       <span class="divider"></span>
       <a href="#Tiendas">Tiendas</a>
-      <a href="#">Agenda Tu Cita</a>
+      <a href="#Agenda">Agenda Tu Cita</a>
     </nav>
 
     <!-- Iconos -->
     <div class="icons">
-  <img src="/SVG/usuario.png" alt="Usuario">
-  
-</div>
-
+      <img src="/Imgenes/logo-removebg-preview.png" alt="Usuario">
+    </div>
 
   </div>
 </header>
 
-<section class="contenedor-doble" >
+<section class="contenedor-doble">
   <div class="imagen">
     <img src="/Imgenes/imagen 1.jpg" alt="Imagen 1">
   </div>
@@ -44,7 +42,7 @@
   <div class="imagen">
     <img src="/Imgenes/Imagen 2.jpg" alt="Imagen 2">
   </div>
-</section>
+</section >
 
 <section class="carrusel-section" id="Articulos">
   <h2>Articulos en Sucursales</h2>
@@ -54,39 +52,34 @@
     <div class="card">
       <img src="/Imgenes/Lente1.jpg" alt="">
       <h4>Dave x GAAD</h4>
-      
     </div>
 
     <div class="card">
       <img class="" src="/Imgenes/Lente2.jpg" alt="">
       <h4>Glorp Antimateria</h4>
-      
     </div>
 
     <div class="card">
       <img src="/Imgenes/Lente3.jpg" alt="">
       <h4>Guillermo</h4>
-      
     </div>
 
     <div class="card">
       <img src="/Imgenes/Lente4.jpg" alt="">
       <h4>Dafna</h4>
-      
     </div>
 
     <div class="card">
       <img src="/Imgenes/Lente5.jpg" alt="">
       <h4>Bruno</h4>
-      
     </div>
   </div>
 </section>
 
 <section class="slider-container" id="Ofertas">
   <div class="carrusel-section">
- <h2>Vista </h2>
-  <p>Aquí encontrarás tu lente ideal</p>
+    <h2>Ofertas</h2>
+    <p>Aquí encontrarás tu lente ideal</p>
   </div>
   <button class="arrow left" onclick="prevSlide()">‹</button>
 
@@ -110,7 +103,7 @@
 <script src="/Js/Carrusel.js"></script>
 
 <section class="carrusel-section" id="CadaOcacion">
-    <h2>Lentes para toda ocasión</h2>
+  <h2>Lentes para toda ocasión</h2>
   <p>Para irte a pasear o lograrte graduar, un lente no le va a faltar</p>
 </section>
 
@@ -119,57 +112,78 @@
     <img src="https://i.pinimg.com/1200x/c7/82/8a/c7828ae79313abf024a0c12472e63701.jpg" alt="Imagen 1">
     <h1 class="Texto">Vista</h1>
   </div>
-<div class="separacion"></div>
-  <div class="imagenn" >
+  <div class="separacion"></div>
+  <div class="imagenn">
     <img src="https://i.pinimg.com/736x/32/6c/95/326c95a44a018e6384d55db2c0eaabb9.jpg" alt="Imagen 2">
     <h1 class="Texto">Sol</h1>
   </div>
 </section>
 
-<section class="templo-section" id="Tiendas">
+<section class="tiendas-section" id="Tiendas">
+  <h2>Nuestras Tiendas</h2>
+  <p class="subtitle">Visítanos en cualquiera de nuestras sucursales</p>
 
-  <h2>Ubicacion</h2>
-  <p class="subtitle">
+  <div class="tiendas-grid">
     
-  </p>
-
-  <div class="form-row">
-    <div class="field">
-      <label>Estado<span>*</span></label>
-      <select>
-        <option>Chiapas</option>
-        <option>Ciudad de México</option>
-      </select>
+    <!-- Tienda 1: Tuxtla Gutiérrez -->
+    <div class="tienda-card">
+      <div class="tienda-info">
+        <h3>Tuxtla Gutiérrez</h3>
+        <p class="estado">Chiapas</p>
+        <p class="direccion">📍 Centro de la ciudad</p>
+        <p class="horario">⏰ Lunes a Sábado<br>9:00 am – 7:00 pm</p>
+        <p class="telefono">📞 (961) 123-4567</p>
+      </div>
+      <div class="tienda-mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61731.31234!2d-93.1429!3d16.7516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ecd8fe3d873b1f%3A0x52e9862a6b417e4a!2sTuxtla%20Guti%C3%A9rrez%2C%20Chiapas!5e0!3m2!1ses!2smx!4v1234567890"
+          loading="lazy"
+          allowfullscreen>
+        </iframe>
+      </div>
     </div>
 
-    <div class="field">
-      <label>Tiendas<span>*</span></label>
-      <select>
-        <option>Tuxtla Gutiérrez</option>
-        <option>Tapachula</option>
-        <option>CDMX Centro</option>
-      </select>
+    <!-- Tienda 2: Tapachula -->
+    <div class="tienda-card">
+      <div class="tienda-info">
+        <h3>Tapachula</h3>
+        <p class="estado">Chiapas</p>
+        <p class="direccion">📍 Zona centro</p>
+        <p class="horario">⏰ Lunes a Sábado<br>9:00 am – 7:00 pm</p>
+        <p class="telefono">📞 (962) 987-6543</p>
+      </div>
+      <div class="tienda-mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61913.45678!2d-92.2606!3d14.9067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x858045bb7c4e8f41%3A0x4b5c8e8d3c2a1b9a!2sTapachula%2C%20Chiapas!5e0!3m2!1ses!2smx!4v1234567891"
+          loading="lazy"
+          allowfullscreen>
+        </iframe>
+      </div>
     </div>
 
-    <div class="field horarios">
-      <label>Próximos horarios:</label>
-      <p>Lunes a Sábado · 9:00 am – 7:00 pm</p>
+    <!-- Tienda 3: Ciudad de México -->
+    <div class="tienda-card">
+      <div class="tienda-info">
+        <h3>Ciudad de México</h3>
+        <p class="estado">CDMX</p>
+        <p class="direccion">📍 Centro Histórico</p>
+        <p class="horario">⏰ Lunes a Sábado<br>9:00 am – 7:00 pm</p>
+        <p class="telefono">📞 (55) 5555-1234</p>
+      </div>
+      <div class="tienda-mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120567.89012!2d-99.1332!3d19.4326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce0026db097507%3A0x54061076265ee841!2sCentro%20Hist%C3%B3rico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1234567892"
+          loading="lazy"
+          allowfullscreen>
+        </iframe>
+      </div>
     </div>
+
   </div>
-
-  <!-- MAPA -->
-  <div class="mapa-tiendas">
-    <iframe
-      src="https://www.google.com/maps?q=Tuxtla%20Gutiérrez%20Chiapas|Tapachula%20Chiapas|Ciudad%20de%20México&output=embed"
-      loading="lazy"
-      allowfullscreen>
-    </iframe>
-  </div>
-
 </section>
 
 
-<footer class="footer">
+<footer class="footer" id="Agenda">
   <div class="footer-container">
 
     <div class="footer-col">
