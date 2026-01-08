@@ -530,3 +530,120 @@ body {
     right: 15px;
   }
 }
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 160px;
+  }
+
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .logo {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .icons img {
+    width: 60px;
+    height: auto;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .contenedor-doble,
+  .contenedor-doblee {
+    padding: 0 15px;
+  }
+
+  .imagen img,
+  .imagenn img {
+    height: 320px;
+  }
+
+  .Texto {
+    font-size: 32px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .card {
+    min-width: 240px;
+    padding: 15px;
+  }
+
+  .card img {
+    height: 220px;
+  }
+
+  .carrusel {
+    gap: 20px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .slide img {
+    height: 300px;
+    border-radius: 12px;
+  }
+
+  .arrow {
+    width: 45px;
+    height: 45px;
+    font-size: 32px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .tiendas-section {
+    padding: 60px 20px;
+  }
+
+  .tienda-info {
+    padding: 25px 20px;
+  }
+
+  .tienda-info h3 {
+    font-size: 22px;
+  }
+
+  .tienda-mapa {
+    height: 220px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    text-align: center;
+  }
+
+  .footer-col a {
+    font-size: 15px;
+  }
+}
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+
+
